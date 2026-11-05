@@ -1,0 +1,8 @@
+# Hide the secret API key configuration
+.env
+
+# Hide the local database file (so your personal watchlist isn't pushed)
+movies.db
+
+# Hide temporary Python cache files
+__pycache__/
