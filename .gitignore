@@ -2,7 +2,7 @@
 .env
 
 # Hide the local database file (so your personal watchlist isn't pushed)
-movies.db
+media.db
 
 # Hide temporary Python cache files
 __pycache__/
