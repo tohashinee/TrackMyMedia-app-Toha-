@@ -130,6 +130,7 @@ def mainmenu():
         else:
             print("⚠️ Invalid choice. Please enter a number between 1 and 4.")
 
-mainmenu()
-conn.close()
+if __name__ == "__main__":
+    mainmenu()
+    conn.close()
     

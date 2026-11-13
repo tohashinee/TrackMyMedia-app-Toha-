@@ -91,6 +91,12 @@ Execute the primary execution script to launch the application interface:
 python TrackMyMedia.py
 
 ```
+\### QA Documentation Artifacts
+System Requirements Specification (SRS): Defines Functional Requirements (`FR-01`–`FR-05`) and Non-Functional Requirements (`NFR-01`–`NFR-04`).
+Software Test Plan: Outlines test scope, strategy, entry/exit criteria, and test environment.
+Test Scenarios & Test Cases (`TS-01`–`TS-05` / `TC-01`–`TC-0`): Covers positive CRUD flows, boundary ID deletion, invalid CLI inputs, mocked API timeouts, and SQL injection payloads.
+Defect Log & Cycle 1 Test Summary Report: Documents Cycle 1 execution (7/8 Pass, 1/8 Fail), screenshot evidence, and a Conditional Hold release recommendation pending defect remediation.
+
 
 
 
@@ -103,6 +109,8 @@ Database Lifecycle Routines: Learned how pointers (cursors) interface with local
 REST API Networking: Learned how structured parameters interact across URLs (`?apikey=` and `\&t=`), unpacking asynchronous web JSON responses inside data frames, and managing network failures dynamically.
 
 \* \*\*Production Security Fundamentals:\*\* Understood Git workflow protection behaviors by employing standard targeting guidelines within `.gitignore` layers to drop tracking dependencies for personal active files like local databases and application keys.
+
+\* \*\*End-to-End QA & STLC Execution:\* \* Translated system requirements into traceable test scenarios, automated `unittest` cases, and reproducible defect logs with screenshot evidence.
 
 
 
