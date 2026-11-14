@@ -32,7 +32,7 @@ Test Scenarios give a high-level idea of what to test while test cases provide d
 |TC-04|TS-03|FR-05|Delete Existing Movie by Valid ID|Movie with ID '1' exists in the test DB.|1. Select Option `3` (Delete). 2. Enter ID "1".|Record ID '1' is deleted from SQLite; confirmation message displayed. |Pass|
 |TC-05|TS-03|FR-05|Delete Non-Existent Movie ID (Boundary|Movie ID '9999' does not exist in test DB|1. Select Option `3` (Delete). 2. Enter ID "9999".|App displays "No movie found with ID 9999"; database remains unaffected. |Pass|
 |TC-06|TS-04|NFR-03|Invalid CLI Menu Choice|Application is at the main menu loop. |1. Enter "hello" at main menu.|App catches invalid choices, prints user-friendly warnings, and returns to the menu. |Pass|
-|TC-07|TS-04|NFR-03,NFR-04|API Timeout / Network Failure (Mocked)|requests.get mocked to raise Timeout / ConnectionError|1. Trigger movie lookup function|Exception is caught cleanly; network error prompt is shown without crashing the CLI. |Pass|
+|TC-07|TS-04|NFR-03,NFR-04|API Timeout / Network Failure (Mocked)|requests.get mocked to raise Timeout / ConnectionError|1. Trigger movie lookup function|Exception is caught cleanly; network error prompt is shown without crashing the CLI. |Fail|
 |TC-08|TS-05|NFR-02|SQL Injection Payload Mitigation|Test DB initialized with "movies" table. |1. Pass "'; DROP TABLE movies;--" as movie title into add\_movie\_to\_db(). |Parameterized '?'query treats payload as literal text; 'movies' table remains intact.|Pass|
 
 
